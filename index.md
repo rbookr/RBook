@@ -12,13 +12,11 @@
 
 ## Author:Rainboy
 
-<center>
 
 [![click to author github home page](https://github.com/rainboylvx.png?size=200)](https://github.com/Rainboylvx/)
 
 [click to author github home page](https://github.com/Rainboylvx/)
 
-</center>
 
 ## License
 
