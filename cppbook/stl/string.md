@@ -8,7 +8,7 @@ video: ""
 titleEmojiTag: ":tv:"
 ---
 
-@[toc]
+
 # string的使用
 
 ## string版的hello world

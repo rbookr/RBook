@@ -7,7 +7,7 @@ author: Rainboy
 ---
 
 
-@[toc]
+
 
 ## pair类型
 
