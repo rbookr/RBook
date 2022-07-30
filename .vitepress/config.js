@@ -44,7 +44,7 @@ export default {
       {
         text:'快速入门',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items:[
           { text: '1.第一个程序', link: '/cpp_quick_guide/1-第一个程序.md' },
           { text: '2.注释', link: '/cpp_quick_guide/2-注释.md' },
@@ -59,6 +59,14 @@ export default {
           {text:'11.函数',link:'/cpp_quick_guide/11-函数.md'    },
           {text:'12.递归',link:'/cpp_quick_guide/12-递归.md'    },
           {text:'13.总结',link:'/cpp_quick_guide/13-总结.md'     }
+        ]
+      },
+      {
+        text:'竞赛路线',
+        collapsible: true,
+        collapsed: false,
+        items:[
+          { text: '路线', link: '/竞赛路线.md' }
         ]
       }
     ]
