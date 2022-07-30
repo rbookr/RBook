@@ -62,7 +62,7 @@ async function main(){
    */
 
   let files = [
-  '0-head.md',
+  '0-head.txt',
   '1-第一个程序.md',
   '2-注释.md',
   '3-数据类型.md',

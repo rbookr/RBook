@@ -10,7 +10,7 @@ toc-own-page: true
 titlepage: true,
 titlepage-rule-color: "360049"
 titlepage-background: "backgrounds/background1.pdf"
-...
+---
 
 ## 前言
 
