@@ -2,6 +2,25 @@
 
 [![CC BY-NC-SA 4.0](https://camo.githubusercontent.com/7572a938f78b7dde0dbd741844b0b2bd7c031fdae63a420e0f80cbcd9911a154/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d434325323042592d2d4e432d2d5341253230342e302d6c69676874677265792e737667)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+## how to build
+
+```bash
+git clone https://github.com/rbookr/vitepress ~/vitepress
+cd ~/vitepress && pnpm install && pnpm build
+# clone this repo
+git clone https://github.com/rbookr/RBook ~/RBook
+cd ~/Rbook && pnpm install
+pnpm link ~/vitepress
+
+# dev -> http://localhost:3000
+pnpm dev
+
+# build and serve
+# -> http://localhost:5000
+pnpm build
+pnpm serve
+
+```
 
 ## License
 
