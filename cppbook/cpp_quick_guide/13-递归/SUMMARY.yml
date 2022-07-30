@@ -1,0 +1,24 @@
+- 
+  title: 序
+  path: index.md
+- 
+  title: 递归入门-求阶乘
+  path: 求阶乘.md
+- 
+  title: 前进与回溯
+  path: 前进与回溯.md
+- 
+  title: 斐波那契数列
+  path: 斐波那契数列.md
+- 
+  title: 汉诺塔
+  path: 汉诺塔.md
+- 
+  title: 整数划分
+  path: 整数划分.md
+- 
+  title: 递归的应用：枚举
+  path: 递归的应用：枚举.md
+- 
+  title: 练习题目
+  path: 练习题目.md

@@ -1,0 +1,9 @@
+- 
+  title: stack
+  path: stack.md
+- 
+  title: queue
+  path: queue.md
+- 
+  title: priority_queue
+  path: priority_queue.md

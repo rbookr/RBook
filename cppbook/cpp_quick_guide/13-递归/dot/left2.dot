@@ -1,0 +1,23 @@
+graph g {
+    node[shape=plaintext fixedsize=true  colorscheme=accent8 ];
+    b[label=""];
+    a[
+        label=< <TABLE CELLBORDER="1" BORDER="0" CELLSPACING="0" CELLPADDING="2">
+            <tr>
+                <td PORT=""> </td>
+                <td PORT=""> </td>
+                <td PORT=""> </td>
+                <td PORT="">n-1</td>
+                <td PORT="">n</td>
+            </tr>
+            <tr>
+                <td PORT=""> </td>
+                <td PORT=""> </td>
+                <td PORT=""> </td>
+                <td PORT="">2</td>
+                <td PORT="">1</td>
+            </tr>
+        </TABLE> >
+    ]
+    x[label=""];
+}
