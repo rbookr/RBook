@@ -1,0 +1,12 @@
+{
+  "name": "cpp_for_beginners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
