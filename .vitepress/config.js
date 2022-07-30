@@ -44,7 +44,7 @@ export default {
     nav: [
       { text: 'CppBook', link: '/cppbook/' },
       { text: 'Rbook', link: '/rbook/' },
-      { text: 'Tools', link: '/tools/' }
+      { text: 'Appendix', link: '/appendix/' }
     ],
 
     sidebar: {
