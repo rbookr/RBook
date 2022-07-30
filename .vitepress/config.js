@@ -1,5 +1,5 @@
 import {markdownEjs} from 'rbookr-theme'
-import cppbookSiderBar from '../cppbook/siderbar'
+import cppbookSiderBar from './cppbook_siderbar'
 //import anchor from 'markdown-it-anchor'
 
 
