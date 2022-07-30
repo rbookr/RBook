@@ -1,8 +1,11 @@
-# CppBook
+# RBook
 
-**学习NOIer,ACMer**的c++语法书
+**学习NOIer,ACMer**的c++语法书,它由三个部分组成
 
-![](./public/cppbook.jpg)
+1. cppbook,c++入门及相关语法
+2. rbook,算法书
+3. tools,平时写题目中用到的相关工具
+
 
 
 ## Author:Rainboy
