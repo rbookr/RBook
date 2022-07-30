@@ -1,7 +1,11 @@
-import {markdownEjs} from 'rbookr-theme'
+import markdownEjs from './markdown-plugin/ejs'
+import mathjax3 from 'markdown-it-mathjax3';
 import cppbookSiderBar from './cppbook_siderbar'
 //import anchor from 'markdown-it-anchor'
+//
 
+
+const customElements = ['mjx-container'];
 
 export default {
 
@@ -17,6 +21,14 @@ export default {
     ['link', { rel: "shortcut icon", href: "/rbookIcon/favicon.ico"}],
   ],
 
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag),
+      },
+    },
+  },
+
   markdown: {
     theme: 'material-palenight',
     lineNumbers: true,
@@ -30,7 +42,8 @@ export default {
     // options for markdown-it-toc-done-right
     toc: { level: [1, 2,3] },
     config: (md) => {
-      md.use(markdownEjs)
+      md.use(markdownEjs);
+      md.use(mathjax3);
     }
   },
 
