@@ -50,6 +50,12 @@ export default {
 
   themeConfig: {
     logo:'/rbookIcon/favicon.ico',
+
+    editLink: {
+      pattern: 'https://github.com/rbookr/RBook/edit/master/:path',
+      text: 'Edit this page on GitHub'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/rbookr/cpp_for_beginners' }
     ],
