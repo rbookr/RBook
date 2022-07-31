@@ -1,0 +1,63 @@
+reade [vitepress markdown first](https://vitepress.vuejs.org/guide/markdown.html)
+plugins :
+the vitepress use plugin 
+
+import container from 'markdown-it-container'
+import anchor from 'markdown-it-anchor'
+import attrs from 'markdown-it-attrs'
+import emoji from 'markdown-it-emoji'
+import toc from 'markdown-it-toc-done-right'
+
+
+container
+
+- style
+    ```
+    ::: style text-algin:center
+    :::
+
+            |
+            V
+    <div style="text-algin:center">
+    </div>
+    ```
+- class
+    ```
+    ::: class myclass1 class2
+    :::
+
+            |
+            V
+    <div class="myclass class2">
+    </div>
+    ```
+
+
+my plugin
+
+ejs -> 
+
+use ejs syntax in markdown file, first use ejs render markdown file
+
+
+dot language fenc
+
+```viz-dot
+graph {a}
+```
+
+```neato-dot
+graph {a}
+```
+
+will render to svg image
+
+
+TODO 
+
+- mermaid
+- flowchart
+
+## my vue componet
+
+viz gallaey

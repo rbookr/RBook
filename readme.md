@@ -22,6 +22,12 @@ pnpm serve
 
 ```
 
+## support markdown syntax
+
+use markdown-it and some plugins to extend md syntax;
+
+if you want to kown what md syntax this book support , please read [this](./markdown_syntax.txt)
+
 ## plugins of using
 
 - [mermaid](https://github.com/mermaid-js/mermaid)
