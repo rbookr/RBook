@@ -28,7 +28,7 @@ module.exports = [
       {text:'13-3 前进与回溯',link:'/cppbook/cpp_quick_guide/13-递归/前进与回溯.md'    },
       {text:'13-4 递归练习',link:'/cppbook/cpp_quick_guide/13-递归/题目练习.md'    },
       {text:'13-5 递归的应用：枚举',link:'/cppbook/cpp_quick_guide/13-递归/递归的应用_枚举.md'    },
-      {text:'14.总结',link:'/cppbook/cpp_quick_guide/13-总结.md'     }
+      {text:'14.总结',link:'/cppbook/cpp_quick_guide/14-总结.md'     }
     ]
   },
   {
