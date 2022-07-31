@@ -1,0 +1,11 @@
+//使 fence 在一行,一行两个
+.code_line {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  > div {
+    //flex:1 0 auto;
+    flex:1 0;
+    margin:0 !important;
+  }
+}
