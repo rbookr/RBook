@@ -1,3 +1,18 @@
+
+.content {
+  details[open] {
+      background-color: lighten($color: #2a9d8f, $amount: 50) !important;
+      color: darkgray !important;
+  }
+  details {
+    color: lightgray !important;
+    background-color: #264653 !important;
+    summary {
+      cursor: pointer;
+    }
+  }
+}
+
 //使 fence 在一行,一行两个
 .code_line {
   display:flex;
