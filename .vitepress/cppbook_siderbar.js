@@ -17,7 +17,10 @@ module.exports = [
       {text:'9.数组',link:'/cppbook/cpp_quick_guide/9-数组.md'     },
       {text:'10-1.简单指针',link:'/cppbook/cpp_quick_guide/10-1-简单指针.md'     },
       {text:'10-2.引用',link:'/cppbook/cpp_quick_guide/10-2-引用.md'     },
-      {text:'11.字符串',link:'/cppbook/cpp_quick_guide/11-字符串.md'  },
+      {text:'11-1 字符串',link:'/cppbook/cpp_quick_guide/11-字符数组与字符串/index.md'  },
+      {text:'11-2 字符数组',link:'/cppbook/cpp_quick_guide/11-字符数组与字符串/CString.md'  },
+      {text:'11-3 c++ string',link:'/cppbook/cpp_quick_guide/11-字符数组与字符串/CPPString.md'  },
+      {text:'11-4 字符串练习题目',link:'/cppbook/cpp_quick_guide/11-字符数组与字符串/练习题目.md'  },
       {text:'12-1 函数入门📺 ',link:'/cppbook/cpp_quick_guide/12-函数/index.md'    },
       {text:'12-2 函数定义📺 ',link:'/cppbook/cpp_quick_guide/12-函数/定义.md'    },
       {text:'12-3 进一步理解参数📺 ',link:'/cppbook/cpp_quick_guide/12-函数/进一步理解参数.md'    },
@@ -28,7 +31,9 @@ module.exports = [
       {text:'13-3 前进与回溯',link:'/cppbook/cpp_quick_guide/13-递归/前进与回溯.md'    },
       {text:'13-4 递归练习',link:'/cppbook/cpp_quick_guide/13-递归/题目练习.md'    },
       {text:'13-5 递归的应用：枚举',link:'/cppbook/cpp_quick_guide/13-递归/递归的应用_枚举.md'    },
-      {text:'14.总结',link:'/cppbook/cpp_quick_guide/14-总结.md'     }
+      {text:'14.结构体',link:'/cppbook/cpp_quick_guide/结构体.md'     },
+      {text:'15.文件操作',link:'/cppbook/cpp_quick_guide/14-文件操作.md'     },
+      {text:'16.总结',link:'/cppbook/cpp_quick_guide/14-总结.md'     }
     ]
   },
   {
