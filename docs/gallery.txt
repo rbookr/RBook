@@ -1,0 +1,83 @@
+gallery 一个可以把内部的内容变成轮播的一个vue组件,可以添加log
+
+
+
+```
+
+</gallery :width=600 title="this is title">
+    <div> slide show 1</div>
+    <div> slide show 2</div>
+    <div> slide show 3</div>
+    <div> slide show 4</div>
+
+    <template v-slot:log>
+        <p> log 1</p>
+        <p> log 2</p>
+        <p> log 3</p>
+    </template>
+<gallery>
+```
+
+参数:
+
+| props      | default              | effect                                          |
+|------------+----------------------+-------------------------------------------------|
+| width      | 600                  | gallery width                                   |
+| height     | -1(mean auto height) | gallery height                                  |
+| title      | gallery              | show                                            |
+| autoidxlog | true                 | auto add class(log-1,log-2) to v-slot:log child |
+
+autoidxlog的使用,有两种方式
+
+1. autoidxlog : true
+
+会从1开始自动给slot:log内的直接子元素添加类名:log-1,log-2
+
+类名的作用的是切换到对应的项目的时候,显示的log内容
+
+1. autoidxlog : false
+
+此时需要自己设置类名.
+当你只需要某些轮播项目有log时,使用
+
+```
+
+</gallery :width=600 title="this is title">
+    <div> slide show 1</div>
+    <div> slide show 2</div>
+    <div> slide show 3</div>
+
+    <template v-slot:log>
+        <p class="log-1"> log 1</p>
+        <p class="log-3"> log 3</p>
+    </template>
+<gallery>
+
+```
+
+这样项目2,`slide show 2` 显示时,不会有log
+
+
+----------------------
+
+和ejs,在markdown中组合使用,参考 ../cppbook/cpp_quick_guide/13-递归/递归的应用_枚举.md
+
+
+```
+
+<gallery title="第i个数最多选到n-(m-i)+1" :width="600">
+    
+<% var n = 2; %>
+<% for(let i=1;i<=n;i++){ %>
+<%- include('images/d' + i +'.txt') %>
+<%}%>
+
+<template v-slot:log>
+<% for(let i=1;i<=n;i++){ %>
+<%- include('images/log' + i +'.txt') %>
+<%}%>
+</template>
+
+    
+</gallery>
+```
