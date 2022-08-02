@@ -55,6 +55,15 @@ export default {
 
   themeConfig: {
     logo:'/rbookIcon/favicon.ico',
+    siteTitle:'CppBook',
+    //根据
+    siteConfgByRoute: [
+      {start:"/cppbook/",title:'CppBook',logo:'/cppbookIcon/favicon.ico'},
+      {start:"/rbook/",title:'RBook',logo:'/rbookIcon/favicon.ico'},
+      {start:"/appendix/",title:'Appendix',logo:'/rbookIcon/favicon.ico'}
+    ],
+
+
 
     editLink: {
       pattern: 'https://github.com/rbookr/RBook/edit/master/:path',
