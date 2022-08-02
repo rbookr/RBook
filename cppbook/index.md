@@ -15,6 +15,13 @@
 
 :::
 
+## feedback and question 反馈与询问
+
+如果你有任何问题,你可以去本项目的[github issue](https://github.com/rbookr/RBook/issues)提出.
+
+if you have any question,please issue at [github issue](https://github.com/rbookr/RBook/issues).
+
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).

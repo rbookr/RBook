@@ -6,7 +6,7 @@ module.exports = md => {
 
     //是不是 dot,viz-dot,dot,neato-dot
     //[布局方式]-dot
-    if (token.info.length >= 3 && /dot$/.test(token.info)) {
+    if (token.info.length >= 3 && /dot$/.test(token.info.trim())) {
       return `<pre v-pre class="dot loading">${token.content.trim()}</pre>`
     }
 

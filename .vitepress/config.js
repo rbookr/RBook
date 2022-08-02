@@ -66,8 +66,8 @@ export default {
     ],
 
     nav: [
-      { text: 'CppBook', link: '/cppbook/' },
       { text: 'Rbook', link: '/rbook/' },
+      { text: 'CppBook', link: '/cppbook/' },
       { text: 'Appendix', link: '/appendix/' }
     ],
 
