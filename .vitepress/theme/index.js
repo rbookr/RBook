@@ -1,4 +1,12 @@
 import './mathjax3.css';
 import './app.scss'
 
-export { default } from 'vitepress/theme';
+import gallery from 'COM/gallery.vue'
+
+import DefaultTheme from 'vitepress/theme'
+export default {
+  ...DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('gallery', gallery)
+  }
+}
