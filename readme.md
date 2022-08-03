@@ -1,6 +1,47 @@
 # Algorithm Book For Noier && Acmer
 
-[![CC BY-NC-SA 4.0](https://camo.githubusercontent.com/7572a938f78b7dde0dbd741844b0b2bd7c031fdae63a420e0f80cbcd9911a154/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d434325323042592d2d4e432d2d5341253230342e302d6c69676874677265792e737667)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+---------------------
+<div align="center" style="display:flex;gap:10px; justify-content:center;margin-top:20px;">
+    <img src="/public/rbook_big_logo.png" alt="" />
+</div>
+
+<div align="center" style="display:flex;gap:10px; justify-content:center;margin-top:20px;">
+  <a href="https://github.com/rbookr/Rbook">
+    <img src="https://img.shields.io/github/stars/rbookr/RBook?style=for-the-badge&color=green" alt="">
+  </a>
+  <a href="https://github.com/rbookr/Rbook/issues">
+    <img src="https://img.shields.io/github/stars/rbookr/RBook?style=for-the-badge&color=green" alt="" />
+  </a>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge&color=green" alt="" />
+  </a>
+</div>
+
+
+
+## 说明
+
+这里是新的RBook,正在建设中,你可以先访问[老版本的rbook](http://rbook_old.roj.ac.cn/)
+
+如果你觉得本项目不错,督促作者尽快更新,请点击[这里](https://github.com/rbookr/Rbook),点击右上角**Star**,收藏本项目.
+
+如果你想要提问,请点击这里[RBook issues](https://github.com/rbookr/RBook/issues)
+
+
+如果你打不本网站,尝试下面的其它镜像
+
+- https://rbook.roj.ac.cn 主站
+- https://rbook1.roj.ac.cn github pages
+- https://rbook2.roj.ac.cn netlify
+
+
+目录的标题带有 📺  标记的表示,我有录制对应的视频教程
+
+## 视频教程
+
+- [阿里云盘,分享] (https://www.aliyundrive.com/s/CQQrNCeiRBy) 提取码rainboy
+- BT下载: TODO
 
 ## how to build
 

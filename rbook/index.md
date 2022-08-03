@@ -1,8 +1,8 @@
-# CppBook
+# RBook
 
-**写给NOIer,ACMer**的c++**语法**书
+**给写NOIer,ACMer**的c++**算法**书
 
-![](/cppbook.jpg)
+![](/noipbook.jpg)
 
 
 ## Author:Rainboy

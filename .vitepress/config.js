@@ -55,7 +55,7 @@ export default {
 
   themeConfig: {
     logo:'/rbookIcon/favicon.ico',
-    siteTitle:'CppBook',
+    siteTitle:'RBook',
     //根据
     siteConfgByRoute: [
       {start:"/cppbook/",title:'CppBook',logo:'/cppbookIcon/favicon.ico'},

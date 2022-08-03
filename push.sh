@@ -1,3 +1,5 @@
+# push to vps
+rsync -av --progress --delete --exclude '.git' ./.vitepress/dist/  rbook:~/RBook/www
 cd ./.vitepress/dist
 /usr/bin/rm -rf .git
 git init
