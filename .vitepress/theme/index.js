@@ -1,4 +1,3 @@
-import './mathjax3.css';
 import './app.scss'
 
 import gallery from 'COM/gallery.vue'

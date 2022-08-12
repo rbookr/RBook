@@ -35,6 +35,8 @@
 - https://rbook1.roj.ac.cn github pages
 - https://rbook2.roj.ac.cn netlify
 
+你也可以访问作者作品的导航网站: http://roj.ac.cn
+
 
 目录的标题带有 📺  标记的表示,我有录制对应的视频教程
 
@@ -42,6 +44,11 @@
 
 - [阿里云盘,分享] (https://www.aliyundrive.com/s/CQQrNCeiRBy) 提取码rainboy
 - BT下载: TODO
+
+
+## 作者的其它的仓库
+
+ - [RainboyNoip/algorithms: 我写的算法与工具，可以在写题目中使用](https://github.com/RainboyNoip/algorithms)
 
 ## how to build
 

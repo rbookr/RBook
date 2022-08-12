@@ -1,9 +1,5 @@
 import cppbookSiderBar from './cppbook_siderbar'
 
-//markdown-it plugin
-import mathjax3 from 'markdown-it-mathjax3';
-import markdownEjs from './markdown-plugin/ejs'
-import extend_fence from './markdown-plugin/extend_fenc'
 
 //import anchor from 'markdown-it-anchor'
 //
@@ -15,7 +11,7 @@ export default {
 
   lang: 'zh-CN',
   title: 'RBook',
-  description: 'CppBook -- online book of C++',
+  description: 'RBook -- online book of C++',
   appearance: true,
   head: [
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/rbookIcon/apple-touch-icon.png"}],
@@ -45,11 +41,6 @@ export default {
 
     // options for markdown-it-toc-done-right
     toc: { level: [1, 2,3] },
-    config: (md) => {
-      md.use(markdownEjs);
-      md.use(extend_fence);
-      md.use(mathjax3);
-    }
   },
 
 
@@ -71,7 +62,7 @@ export default {
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/rbookr/cpp_for_beginners' }
+      { icon: 'github', link: 'https://github.com/rbookr/RBook' }
     ],
 
     nav: [
