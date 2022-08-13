@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/github/stars/rbookr/RBook?style=for-the-badge&color=green" alt="">
   </a>
   <a href="https://github.com/rbookr/Rbook/issues">
-    <img src="https://img.shields.io/github/stars/rbookr/RBook?style=for-the-badge&color=green" alt="" />
+    <img src="https://img.shields.io/github/issues/rbookr/RBook?style=for-the-badge&color=green" alt="" />
   </a>
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge&color=green" alt="" />
@@ -38,7 +38,7 @@
 你也可以访问作者作品的导航网站: http://roj.ac.cn
 
 
-目录的标题带有 📺  标记的表示,我有录制对应的视频教程
+目录的标题带有 📺  标记表示,我有录制对应的视频教程.请在下面[视频教程](#视频教程)这一节里查找对应的视频
 
 ## 视频教程
 
