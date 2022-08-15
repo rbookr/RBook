@@ -130,22 +130,39 @@
 | 类的讲解.mp4              | [类的初识](./cppbook/other/类与对象/类的初识.md)     |
 | 重载.mp4                  | [运算符重载](./cppbook/other/类与对象/运算符重载.md) |
 
+下面所有的视频均在的路径在 `Rainboy录制的课程/语法相关/stl学习` 下
+
+| 视频名字                | 相关文章                                                     |
+|-------------------------|--------------------------------------------------------------|
+| [P01]string.mp4         | [string](./cppbook/stl/string.md)                            |
+| [P02]vector.mp4         | [vector](./cppbook/stl/顺序容器/vector.md)                   |
+| [P03]deque.mp4          | [deque](./cppbook/stl/顺序容器/deque.md)                     |
+| [P04]list.mp4           | [list](./cppbook/stl/顺序容器/list.md)                       |
+| [P05]stack.mp4          | [stack](./cppbook/stl/容器适配器/stack.md)                   |
+| [P06]queue.mp4          | [queue](./cppbook/stl/容器适配器/queue.md)                   |
+| [P07]priority_queue.mp4 | [priority_queue](./cppbook/stl/容器适配器/priority_queue.md) |
+| [P08]pair.mp4           | [pair](./cppbook/stl/关联容器/pair.md)                       |
+| [P09]map.mp4            | [map](./cppbook/stl/关联容器/map.md)                         |
+| [P10]set.mp4            | [set](./cppbook/stl/关联容器/set.md)                         |
+
 
 ### 2. 算法与数据结构
 
 下面所有的视频均在的路径在 `Rainboy录制的课程/算法与数据结构/` 下
 
-TODO
+整理中...
 
 ### 3. 附录
 
 下面所有的视频均在的路径在 `Rainboy录制的课程/附录/` 下
 
-TODO
+整理中...
 
 ### 4. 题目解析
 
 下面所有的视频均在的路径在 `Rainboy录制的课程/题目解析/` 下
+
+整理中...
 
 ## 作者的其它的仓库
 
