@@ -5,6 +5,11 @@
 ![](/cppbook.jpg)
 
 
+## 如何开始学习 📺
+
+- [本视频下载](#)
+- [windows 下的c++代码编辑器 下载](https://cowtransfer.com/s/436ce003836b4c) 输入传输口令 ahay9s 查看
+
 ## Author:Rainboy
 
 ::: style display: grid;justify-items: center;

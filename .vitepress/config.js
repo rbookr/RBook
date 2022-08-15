@@ -1,4 +1,5 @@
-import cppbookSiderBar from './cppbook_siderbar'
+import cppbookSideBar from './cppbook_sidebar'
+import appendixSideBar from './appendix_sidebar'
 
 
 //import anchor from 'markdown-it-anchor'
@@ -72,7 +73,8 @@ export default {
     ],
 
     sidebar: {
-      '/cppbook/' : cppbookSiderBar
+      '/cppbook/' : cppbookSideBar,
+      '/appendix/' : appendixSideBar
       //{
         //text:'竞赛路线',
         //collapsible: true,
