@@ -28,6 +28,7 @@
 
 如果你想要提问,请点击这里[RBook issues](https://github.com/rbookr/RBook/issues)
 
+你可以通过邮件 <rainboylvx@qq.com> 联系作者。
 
 如果你打不本网站,尝试下面的其它镜像
 
