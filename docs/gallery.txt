@@ -3,7 +3,6 @@ gallery 一个可以把内部的内容变成轮播的一个vue组件,可以添�
 
 
 ```
-
 </gallery :width=600 title="this is title">
     <div> slide show 1</div>
     <div> slide show 2</div>

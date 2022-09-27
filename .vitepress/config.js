@@ -30,6 +30,8 @@ export default {
     },
   },
 
+  lastUpdated:true,
+
   markdown: {
     theme: 'material-palenight',
     lineNumbers: true,

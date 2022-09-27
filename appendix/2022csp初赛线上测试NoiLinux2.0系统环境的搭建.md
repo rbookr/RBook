@@ -1,5 +1,4 @@
-2022csp比赛线上测试NoiLinux2.0系统环境的搭建
-====
+# 2022csp初赛线上测试NoiLinux2.0系统环境的搭建
 
 作者:Rainboy
 
@@ -58,6 +57,8 @@ EOF
 ```bash
 sudo apt update
 sudo apt install wget
+# 安装解码器
+sudo apt-get install libavcodec58 ffmpeg
 ```
 
 ## 3. 安装腾讯会议 Linux 版
