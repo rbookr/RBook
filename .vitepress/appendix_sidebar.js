@@ -31,7 +31,8 @@ module.exports = [
     collapsed: false,
     items:[
       {text: '竞赛路线', link: '/appendix/竞赛路线.md' },
-      {text: '2022csp初赛线上测试NoiLinux2.0系统环境的搭建', link: '/appendix/2022csp初赛线上测试NoiLinux2.0系统环境的搭建.md' }
+      {text: '2022csp初赛线上测试NoiLinux2.0系统环境的搭建', link: '/appendix/2022csp初赛线上测试NoiLinux2.0系统环境的搭建.md' },
+      {text: '有用的在线资源',link:'/appendix/urls.md'}
     ]
   }
 ]
