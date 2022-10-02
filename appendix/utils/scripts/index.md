@@ -1,9 +1,119 @@
-## 说明
+# 常用脚本
+
+下面的脚本都是在Linux下使用
 
 下面的脚本如果保存
 
 如果说明是`alias`
 TODO
+
+## 1. ❗限制程序运行的时间
+
+保存下面的程序为`1.cpp`
+
+```cpp
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+
+# 函数的作用是 100ms 输出一名话
+# 一共运行 1.5s
+int main(){
+    int i=0;
+    while ( 1 ) {
+        using namespace std::chrono_literals;
+        std::this_thread::sleep_for(100ms);
+        std::cout << "sleep " << ++i << " ms" << std::endl;
+        if( i == 15 ) break;
+    }
+    return 0;
+}
+```
+
+编译这个程序
+```bash
+g++ -g -o 1.out 1.cpp
+```
+
+限制一个程序运行的时间
+
+```bash
+# 限制1.out运行的时间1s
+timeout 1s 1.out
+```
+
+根据[对拍](../compare/index.md)的对于`||`的讲解,
+加上一个输出,当超时时显示提示.
+
+```bash
+# 限制1.out运行的时间1s
+timeout 1s 1.out || echo timeout
+```
+
+当然你如果想偷懒,不想写后面的`echo timeout`, 你可以这样写,加上一个`-v`参数
+
+```bash
+timeout -v 1s 1.out
+```
+如果超时,会出现最后一行
+
+```plaintext{11}
+sleep 1 ms
+sleep 2 ms
+sleep 3 ms
+sleep 4 ms
+sleep 5 ms
+sleep 6 ms
+sleep 7 ms
+sleep 8 ms
+sleep 9 ms
+sleep 10 ms
+timeout: 正在发送信号 TERM 至命令 "1.out"
+```
+如果把限制被改成`2s`,就不会有提示
+
+```bash
+timeout -v 2s 1.out
+```
+
+## !!自己测试数据
+
+如果你在写一个题目,你也有这个题目的测试数据(多个),如何测试自己的题目是否能通过呢
+
+假如,你在做题目,[a+b问题](https://github.com/rainboyOJ/problems/blob/master/problems/1000/content.md),
+[数据位置](https://github.com/rainboyOJ/problems/tree/master/problems/1000/data)
+
+你写了一个代码如下
+
+```cpp
+#include <cstdio>
+#include <cstring>
+
+int a,b;
+
+int main(){
+    scanf("%d %d",&a,&b);
+    printf("%d\n",a+b);
+    return 0;
+}
+```
+
+下载数据
+
+```bash
+mkdir data
+prefix="https://ghproxy.com/"
+for i in {1..10}; do
+    wget -O data/problem${i}.in ${prefix}https://github.com/rainboyOJ/problems/blob/master/problems/1000/data/problem${i}.in
+    wget -O data/problem${i}.out ${prefix}https://github.com/rainboyOJ/problems/blob/master/problems/1000/data/problem${i}.out
+done
+```
+
+你现在有
+TODO
+
+
 
 ## 快速创建in文件
 
@@ -133,4 +243,5 @@ TODO
 展示输入文件INPUT 的内容 并输出 程序1 说程序2 的运行结果
 
 TODO
+
 

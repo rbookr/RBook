@@ -44,6 +44,9 @@ export default {
 
     // options for markdown-it-toc-done-right
     toc: { level: [1, 2,3] },
+    ejsdata: {
+        host:'https://rbook.roj.ac.cn/'
+    }
   },
 
 
