@@ -1,3 +1,3 @@
 [[toc]]
 
-<%- include("readme.md") %>
+<%- include("readme.md") _%>

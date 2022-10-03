@@ -8,3 +8,4 @@ git add .
 git commit -m "gitpage"
 git push origin master:gh-pages -f
 ssh jifang_server2 "~/scripts/update_rbook.sh"
+#rsync -av --progress --delete --exclude '.git' ./.vitepress/dist/  jifang_server2:~/RBook/

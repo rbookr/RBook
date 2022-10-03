@@ -1,11 +1,8 @@
-# 随机数据的生成
+#pragma once
+#include <iostream>
+#include <random>
+#include <set>
 
-前置知识 [随机数的用法](./随机数的用法.md)
-
-注意下面的`rnd`代表一个的生成随机数据,你可以用[随机数的用法](./随机数的用法.md)
-这里的两种风格的随机数封装类这一
-
-```cpp
 //全局随机数据生成器
 struct Random {
     using ll = long long;
@@ -21,20 +18,22 @@ struct Random {
 
     ll operator()(){ return dis(engine); }
     ll operator()(ll l,ll r){ return l == r ? l : dis(engine) % ( r-l+1 ) + l; }
+
 } _rnd;
-```
 
-整个代码整合到了一个文件,通过下面的命令下载
+// >>> 1 随机数生成
 
-```bash
-wget <%= host%>/miniRainboyLin/randData.hpp
-```
+inline int rand_int() { return _rnd(0,1<<30);}
 
-或去这里查看本书配套的小型代码库[miniRainboyLib](/miniRainboyLib/index.md)
+inline int rand_int(int limit) { return _rnd(limit > 0 ? 0 : limit,limit > 0 ? limit : 0);}
 
-## 随机字符
+inline int rand_int(int l,int r) {
+    if(l > r ) std::swap(l,r);
+    return _rnd(l,r);
+}
 
-```cpp
+// >>> 2 随机字符生成
+
 const char char_sets[] = "abcdefghijklmnopqrstuvwxyzABCDEFHIJKLMNOPQRSTUVWXYZ";
 
 inline char rand_char() { 
@@ -53,17 +52,7 @@ inline char rand_lowchar() {
 inline char rand_upchar() {
     return rand_char(26,52-1);
 }
-```
 
-## 随机字符串
-
-TODO
-
-## 工具函数
-
-定义了一些输出的工具函数
-
-```cpp
 const auto print_one = [](int n,bool nl= false){ 
     std::cout << n <<" " ;
     if(nl) std::cout << "\n";
@@ -85,12 +74,9 @@ struct print_two_w {
             << "\n";
     }
 };
-```
 
+//>>> 随机序列的生成
 
-## 随机序列
-
-```cpp
 //生成n个[l,r]内的随机数
 template<typename F>
 void rand_seq(int n,int l,int r,F&& f){
@@ -102,18 +88,23 @@ void rand_seq(int n,int l,int r,F&& f){
 void rand_seq(int n=10,int l=1,int r=10){
     rand_seq(n,l,r,print_one);
 }
-```
 
-无重复的随机序列
+//>>> 随机区间的生成
+//生成n个区间[l,r]内的随机数
+template<typename F>
+void rand_range(int n,int l,int r,F&& f){
+    for(int i=1;i<=n;++i){
+        int a = _rnd(l,r);
+        int b = _rnd(l,r);
+        if(a>b) std::swap(a,b);
+        f(a,b);
+    }
+}
 
-TODO,`random_shuffle`
+void rand_range(int n=10,int l=1,int r=10){
+    rand_range(n,l,r,print_two);
+}
 
-## 随机树
-
-原理,从第2个点开始,点i和随机点`[1,i-1]`连接,最后形成n条边的连通图,就是
-树
-
-```cpp
 // >>> 随机生成一个树
 template<typename F>
 void rand_tree(int n,F && f){
@@ -125,21 +116,16 @@ void rand_tree(int n,F && f){
 void rand_tree(int n = 10){
     rand_tree(n,print_two);
 }
-```
 
-## 随机二叉树
+//TODO rand_tree_linkList()
+//生成的数据存入linkList里
+//TODO rand_tree_linkList()
 
-同随机树的原理差不多,
-
-设定两个集合$\{left\},\{right\}$, $\{left\}$表示还没有左孩子的点,$\{right\}$同理
-
-每一次点`u`都会去尝试连接`{left}`或`{right}`中的点,保证每个点不会超过2个孩子
-
-```cpp
+// >>> 随机二叉树
 template<typename F>
 void rand_binary_tree(int n,F&& f){
     std::set<int> left{1},right{1};
-    std::vector<int> v(n+1);
+    std::vector<int> v(n+1); //v的初始有n个元素
     auto pic = [](std::set<int> & sets){
         auto b  = sets.begin();
         std::advance(b, _rnd(0,sets.size()-1));
@@ -163,13 +149,13 @@ void rand_binary_tree(int n,F&& f){
 }
 
 void rand_binary_tree(int n=10){
-    return rand_binary_tree(n,tree_out);
+    return rand_binary_tree(n,print_two);
 }
-```
 
-## 随机图
 
-```cpp
+// >>> 随机图
+
+
 // n个点m条边的随机图
 template<typename F>
 void rand_graph(int n,int m,F&& f){
@@ -193,24 +179,3 @@ void rand_graph(int n,int m,F&& f){
 void rand_graph(int n=5,int m=10){
     rand_graph(n,m,print_two);
 }
-```
-
-## 随机二分图
-
-TODO
-
-## 随机链图
-
-TODO
-
-## 随机🌼菊花图
-
-TODO
-
-## 随机蒲公英图
-
-TODO
-
-## 随机🌵仙人掌
-
-TODO
