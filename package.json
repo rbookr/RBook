@@ -8,6 +8,8 @@
     "build": "vitepress build .",
     "postbuild": "postbuild.sh",
     "serve": "vitepress serve .",
+    "push" : "git push origin master",
+    "postpush": "git push gitee master",
     "com:dev": "vite --config components-vite.config.js"
   },
   "keywords": [],

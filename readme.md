@@ -21,6 +21,11 @@
 
 ## 说明
 
+本书仓库地址:
+
+- github地址: https://github.com/rbookr/RBook
+- 国内镜像地址: https://gitee.com/Rainboy/RBook
+
 这里是新的RBook,正在建设中,你可以先访问[老版本的rbook](http://rbook_old.roj.ac.cn/)
 
 如果你觉得本项目不错,督促作者尽快更新,请点击[这里](https://github.com/rbookr/Rbook),点击右上角**Star**,收藏本项目.
@@ -38,7 +43,7 @@
 你也可以访问作者作品的导航网站: http://roj.ac.cn
 
 ::: info
-[本身配套的小型代码库](./miniRainboyLib/index.md)
+[本身配套的小型代码库](./miniRainboyLib/readme.md)
 :::
 
 目录的标题带有 📺  标记表示,我有录制对应的视频教程.请在下面[视频教程](#视频教程)这一节里查找对应的视频
