@@ -11,10 +11,16 @@
 包含代码如下
 
 ```plaintext
+.
+├── example
+│   └── randData.cpp  测试randData.hpp的使用
+├── install.sh  安装脚本
+├── randData.hpp    随机数据生成
+└── readme.md
 ```
 
 ## 下载
 
 ```plaintext
-<%= host %>
+TODO
 ```
