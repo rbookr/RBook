@@ -99,7 +99,7 @@ int main(){
 }
 ```
 
-下载数据
+复制下面的命令到终端里,下载数据
 
 ```bash
 mkdir data
@@ -110,9 +110,33 @@ for i in {1..10}; do
 done
 ```
 
-你现在有
-TODO
+你现在有一个`data`文件夹,里面有数据如下
 
+```
+data
+├── problem10.in
+├── problem10.out
+├── problem1.in
+├── problem1.out
+├── problem2.in
+├── problem2.out
+├── problem3.in
+├── problem3.out
+├── problem4.in
+├── problem4.out
+├── problem5.in
+├── problem5.out
+├── problem6.in
+├── problem6.out
+├── problem7.in
+├── problem7.out
+├── problem8.in
+├── problem8.out
+├── problem9.in
+└── problem9.out
+
+0 directories, 20 files
+```
 
 
 ## 快速创建in文件
@@ -127,9 +151,23 @@ TODO
 # 如果参数不存在那就是in
 xsel -o -b > ${1-"in"}
 ```
-把这个脚本存成`ci`
 
-`ci == create in`
+`${1-"in"}`意思,如果你传递一个参数,例如`ci myin`,那么会创建一个`myin`文件,
+然后把剪切板里的写入到`myin`里,如果不提供一个参数,默认写入到`in`里
+
+把这个脚本存成`ci`,因为`ci == create in`,
+
+
+```
+chmod +x ci
+sudo mv ci /usr/bin
+```
+或者用这个命令安装
+
+```bash
+sudo wget -O /usr/bin/ci https://gitee.com/Rainboy/RBook/raw/master/appendix/utils/scripts/ci.sh
+sudo chmod +x /usr/bin/ci
+```
 
 也可以在`~/.bashrc`,当然哪果你用的是zsh,那修改`~/.zshrc`
 
@@ -139,9 +177,7 @@ ci() {
   xsel -o -b > ${1-"in"}
 }
 ```
-
 使用效果是一样的
-
 
 ## 复制文件内容
 
@@ -151,6 +187,11 @@ ci() {
 #!/bin/env bash
 # 如果参数不存在那就是in
 cat ${1-"1.cpp"} | xsel -i -b
+```
+
+```bash
+sudo wget -O /usr/bin/co https://gitee.com/Rainboy/RBook/raw/master/appendix/utils/scripts/co.sh
+sudo chmod +x /usr/bin/co
 ```
 
 同理,也可以创建一个函数

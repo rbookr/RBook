@@ -139,19 +139,9 @@ false || echo "yes"
 ## 5. 创建shell对拍脚本
 
 ```bash
-#!/bin/env bash
-rand=myrand #假如你的数据生成的程序名 : myrand
-my=1        #假如你的写的程序名 : 1
-right=2     #假如一个一定正确的程序名 : 2
-for i in {1..1000};do # 循环1000次
-    echo $i #输出执行的次数
-    ./$rand > rand.in            # 生成数据
-    ./$my < rand.in > my.out     # 生成你的答案
-    ./$right < rand.in > right.out # 正确的答案
-    diff -q my.out right.out || exit 1 # 如果出错就退出
-done
-echo "all right"
+<%- include("./dp1.sh") _%>
 ```
+
 
 ```bash
 
@@ -168,6 +158,24 @@ chmod +x 1.sh
 ./1.sh
 ```
 
+当然也可以使用下面这些命令之一快速下载创建`1.sh`
+
+```bash
+wget -O 1.sh https://rbook.roj.ac.cn/appendix/utils/compare/dp1.sh
+```
+
+从国内的gitee下载
+
+```bash
+wget -O 1.sh https://gitee.com/Rainboy/RBook/raw/master/appendix/utils/compare/dp1.sh
+```
+从国外的github下载
+
+```bash
+wget -O 1.sh https://github.com/rbookr/RBook/raw/master/appendix/utils/compare/dp1.sh
+```
+
+不要忘记`chmod +x 1.sh`
 
 **改进1**: 能不能不要每一次写个代码就创建一次`1.sh`呢?
 
@@ -178,19 +186,9 @@ chmod +x 1.sh
 
 
 ```bash
-#!/bin/env bash
-my=$1       # 第一个参数指明: 你的程序的名字
-right=$2    # 第二个参数指明: 对的程序的名字
-rand=$3     # 第三个参数指明: 随机数据生成程序
-for i in {1..1000};do
-    echo $i
-    ./$rand > rand.in
-    ./$my < rand.in > my.out
-    ./$right < rand.in > right.out
-    diff -q my.out right.out || exit 1
-done
-echo "all right"
+<%- include("./dp2.sh") _%>
 ```
+
 
 
 ```bash
@@ -203,6 +201,25 @@ chmod +x dp.sh
 # 放入到这个目录就可以执行了
 sudo mv dp.sh /usr/bin
 ```
+
+当然也可以使用下面这些命令之一快速下载创建`dp.sh`
+
+```bash
+wget -O dp.sh https://rbook.roj.ac.cn/appendix/utils/compare/dp2.sh
+```
+
+从国内的gitee下载
+
+```bash
+wget -O dp.sh https://gitee.com/Rainboy/RBook/raw/master/appendix/utils/compare/dp2.sh
+```
+从国外的github下载
+
+```bash
+wget -O dp.sh https://github.com/rbookr/RBook/raw/master/appendix/utils/compare/dp2.sh
+```
+
+不要忘记`chmod +x dp.sh`
 
 ## 6 c++对拍程序
 
