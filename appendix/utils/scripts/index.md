@@ -30,7 +30,7 @@ int main(){
     return 0;
 }
 ```
-
+  
 编译这个程序
 ```bash
 g++ -g -o 1.out 1.cpp

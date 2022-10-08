@@ -8,9 +8,10 @@
     "build": "vitepress build .",
     "postbuild": "postbuild.sh",
     "serve": "vitepress serve .",
-    "push" : "git push origin master",
+    "push": "git push origin master",
     "postpush": "git push gitee master",
-    "com:dev": "vite --config components-vite.config.js"
+    "com:dev": "vite --config components-vite.config.js",
+    "video:dev": "parcel videos/index.pug"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "@vue/devtools-api": "^6.1.4",
     "@vueuse/core": "^8.5.0",
     "body-scroll-lock": "^4.0.0-beta.0",
+    "ejs": "^3.1.8",
     "markdown-it-mathjax3": "^4.3.1",
     "sass": "^1.54.0",
     "shiki": "^0.10.1",
@@ -29,8 +31,10 @@
     "vue": "^3.2.33"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
     "markmap-common": "^0.14.0",
     "markmap-lib": "^0.14.1",
-    "markmap-view": "^0.14.0"
+    "markmap-view": "^0.14.0",
+    "parcel": "^2.7.0"
   }
 }

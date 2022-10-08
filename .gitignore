@@ -36,3 +36,5 @@ pnpm-lock.yaml
 *.exe
 *.out
 *.app
+videos/videos/
+videos/scripts/
