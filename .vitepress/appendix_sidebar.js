@@ -31,6 +31,7 @@ module.exports = [
     collapsed: false,
     items:[
       {text: '如何写题目', link: '/appendix/tricks/如何写题目.md'},
+      {text: '代码模板', link: '/appendix/tricks/template.md'},
     ]
   },
   {
