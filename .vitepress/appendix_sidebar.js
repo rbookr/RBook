@@ -26,6 +26,14 @@ module.exports = [
     ]
   },
   {
+    text:'技巧',
+    collapsible: true,
+    collapsed: false,
+    items:[
+      {text: '如何写题目', link: '/appendix/tricks/如何写题目.md'},
+    ]
+  },
+  {
     text:'其它',
     collapsible: true,
     collapsed: false,

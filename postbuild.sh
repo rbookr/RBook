@@ -8,3 +8,7 @@ function copyfile() {
 
 copyfile appendix/utils/compare/dp1.sh
 copyfile appendix/utils/compare/dp2.sh
+
+cp -r ./videos/videos/ ./.vitepress/dist/
+copyfile videos/index.html
+copyfile videos/style.css
