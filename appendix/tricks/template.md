@@ -8,7 +8,7 @@ using namespace std;
 
 #define fenc cout << "\n=================\n";
 
-#define log(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+#define log(args...) { cout << "LINE:" << __LINE__ << " ";string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
 
 void err(istream_iterator<string> it) {}
 template<typename T, typename... Args>
@@ -23,20 +23,34 @@ const int maxe = 1000005;
 
 int n,m;
 
-int a[maxn];
+// int a[maxn];
 
 // ============ 全局变量 END
 
 //读取数据
 void __init(){
+    cin >> n; 
+    // cin >> m;
+}
+
+// 工作
+void __work(){
 
 }
 
-void
+// 输出答案
+void __print(){
+
+}
+
 int main(){
     // int a=2,b=1,c=3;
-  __init();
     // log(a,b,c);
+    __init();
+    __work();
+    __print();
+
     return 0;
 }
+
 ```
