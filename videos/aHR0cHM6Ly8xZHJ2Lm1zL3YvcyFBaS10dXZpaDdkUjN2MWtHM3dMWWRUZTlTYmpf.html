@@ -1,0 +1,137 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="same-origin">
+    <script src="https://cdn.staticfile.org/dplayer/1.27.0/DPlayer.min.js"></script>
+
+  <style>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.dplayer-logo {
+    opacity: 0.5;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.video-container {
+    position: relative;
+  width: 100%; 
+  height: 100%; 
+}
+
+video, #my_video, .video-js, .vjs-default-skin
+{
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+}
+
+.info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.info {
+    text-align: center;
+
+}
+.info p.title {
+    font-size: 2.5rem;
+    margin: 1rem auto;
+}
+
+.info ul li {
+    float: left;
+}
+.info ul li a,
+.info ul li select {
+  display: block;
+  text-align: center;
+  margin: 8px 11px;
+  padding:5px;
+  text-decoration: none;
+}
+.info ul li a.active  {
+    border-radius: 2px;
+    border: 1px dashed darkblue;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <p class="title">[P07]3.1常量与常量.mp4</p>
+            <ul>
+                <li><a href="/">回rbook</a></li>
+                <li><a href="/videos/">回视频目录</a></li>
+                <li>
+                    <select id="video_src_list" onchange="javascript:switchVideo(this.value)">
+                        
+                            <option value="https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaS10dXZpaDdkUjN2MWtHM3dMWWRUZTlTYmpf/root/content" onclick="switchVideo(this)">观看路线1</a>
+                        
+                            <option value="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaS10dXZpaDdkUjN2MWtHM3dMWWRUZTlTYmpf" onclick="switchVideo(this)">观看路线2</a>
+                        
+                            <option value="https://alist.roj.ac.cn/d/share/RainboyVideo/语法相关/noip,csp c++ 入门视频/[P07]3.1常量与常量.mp4" onclick="switchVideo(this)">观看路线3</a>
+                        
+                            <option value="https://alist.roj.ac.cn/d/share/onedrive/RainboyVideo/语法相关/noip,csp c++ 入门视频/[P07]3.1常量与常量.mp4" onclick="switchVideo(this)">观看路线4</a>
+                        
+                    </select>
+                </li>
+                <li>
+                    <select id="download_list" onchange="javascript:window.open(this.value,'_blank')">
+                        
+                            <option value="https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaS10dXZpaDdkUjN2MWtHM3dMWWRUZTlTYmpf/root/content">下载地址1</a></li>
+                        
+                            <option value="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaS10dXZpaDdkUjN2MWtHM3dMWWRUZTlTYmpf">下载地址2</a></li>
+                        
+                            <option value="https://alist.roj.ac.cn/d/share/RainboyVideo/语法相关/noip,csp c++ 入门视频/[P07]3.1常量与常量.mp4">下载地址3</a></li>
+                        
+                            <option value="https://alist.roj.ac.cn/d/share/onedrive/RainboyVideo/语法相关/noip,csp c++ 入门视频/[P07]3.1常量与常量.mp4">下载地址4</a></li>
+                        
+                    </select>
+                </li>
+
+                <li><a>有问题联系作者邮箱:rainboylvx@qq.com</a></li>
+                <!-- <li><a>提示:双击全屏</a></li> -->
+            </ul>
+        </div>
+        <div class="video-container" id="dplayer">
+        </div>
+    </div>
+  <script src="https://cdnjs.loli.net/ajax/libs/video.js/7.21.0/video.min.js"></script>
+  <script>
+      const dp = new DPlayer({
+                container: document.getElementById('dplayer'),
+                autoplay:true,
+                logo:'/logo.png',
+                video: {
+                          url: 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaS10dXZpaDdkUjN2MWtHM3dMWWRUZTlTYmpf/root/content',
+                      },
+            });
+
+      function switchVideo(videoURL){
+            //let videoURL = e.getAttribute("data")
+            //console.log(videoURL)
+
+            //var player = videojs('my-video');
+            // 存当前的时间
+            //var whereYouAt = player.currentTime();
+            let whereYouAt = dp.video.currentTime
+            dp.switchVideo({url: videoURL });
+            dp.play()
+            dp.seek(whereYouAt)
+            //player.play();
+    }
+  </script>
+</body>
+</html>

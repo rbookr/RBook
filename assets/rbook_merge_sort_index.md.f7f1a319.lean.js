@@ -1,0 +1,1 @@
+import{_ as s,b as n,a,J as l}from"./chunks/framework.218694e7.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"rbook/merge_sort/index.md","lastUpdated":null}'),p={name:"rbook/merge_sort/index.md"},o=l("",2),e=[o];function c(r,t,D,F,y,C){return a(),n("div",null,e)}var b=s(p,[["render",c]]);export{i as __pageData,b as default};
